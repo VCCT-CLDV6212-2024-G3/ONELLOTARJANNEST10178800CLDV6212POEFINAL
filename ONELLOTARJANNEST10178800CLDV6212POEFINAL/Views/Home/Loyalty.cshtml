@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "PLoyalty Rewards Page";
+}
+@model ONELLOTARJANNEST10178800CLDV6212POEFINAL.Models.UserProfile
+<h1>ABC REWARDS PROGRAMME</h1>
+<p>
+    Sign up for the rewards programme by clicking <a href="~/images/abc retailers loyalty programme  contract .pdf" download> Here</a> and uploading the signed contract
+</p>
+<form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required/>
+    <button class="button" type="submit">Upload Contract</button>
+</form>

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+@model ONELLOTARJANNEST10178800CLDV6212POEFINAL.Models.Product
+
+<h1>Products</h1>
+<p>Insert the Product information here</p>
+<form asp-action="AddProduct" method="post">
+    <input type="text" name="ProductID" placeholder="Product ID" required />
+    <input type="text" name="ProductName" placeholder="Product Name" required />
+    <input type="text" name="Price" placeholder="Price" required />
+    <input type="text" name="Quantity" placeholder="Quantity" required />
+    <button class="button" type="submit">Add Product</button>
+</form>
+
+
+
+<h2>Upload Product Image</h2>
+<p>Insert the Product images here</p>
+<br />
+<form asp-action="UploadImg" method="post" enctype="multipart/form-data">
+    <div>
+        <input type="file" name="file" required />
+    </div>
+    <button class="button" type="submit">Upload Image</button>
+</form>
+

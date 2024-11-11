@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Profile Page";
+}
+@model ONELLOTARJANNEST10178800CLDV6212POEFINAL.Models.UserProfile
+<h1>Customer Profile</h1>
+<p>Sign Up to purchase products</p>
+<form asp-action="AddUserProfile" method="post">
+    <input type="text" name="FirstName" placeholder="First Name" required />
+    <input type="text" name="LastName" placeholder="Last Name" required />
+    <input type="email" name="Email" placeholder="Email" required />
+    <input type="text" name="PhoneNumber" placeholder="Phone Number" required />
+    <button class="button" onclick="myFunction()" type="submit">Add Profile</button>
+</form>
+
+<div id="snackbar">Profile added</div>
+<br />
+<a asp-area="" style="color:black;" asp-action="Loyalty" button class="button">Sign Up for Rewards Programme</button></a>

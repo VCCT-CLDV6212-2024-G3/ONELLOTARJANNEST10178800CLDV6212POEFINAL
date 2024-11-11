@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Order Page";
+}
+@model ONELLOTARJANNEST10178800CLDV6212POEFINAL.Models.UserProfile
+<h1>Orders</h1>
+<form asp-action="ProcessOrder" method="post">
+    <input type="text" name="orderId" placeholder="Order ID" required />
+    <button class="button" type="submit">Process Order</button>
+</form>

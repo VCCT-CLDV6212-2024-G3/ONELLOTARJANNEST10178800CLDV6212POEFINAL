@@ -1,0 +1,227 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    background-color: #bcb8b1;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #f4f4f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+    #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px;
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block
+    }
+
+        #myUL li a:hover:not(.header) {
+            background-color: black;
+        }
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: #bcb8b1;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+
+
+.button {
+    color: black;
+    background-color: #ced4da;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition */
+}
+
+    .button:hover {
+        background-color: #adb5bd;
+    }
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 50px;
+        height: auto;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+    .navbar-nav .nav-item {
+        margin: 0 10px;
+    }
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.form-inline .btn-outline-success {
+    color: #fff;
+    background-color: #c2452d;
+    border-color: black;
+}
+
+
+    .form-inline .btn-outline-success:hover {
+        background-color: brown;
+        border-color: black;
+    }
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
