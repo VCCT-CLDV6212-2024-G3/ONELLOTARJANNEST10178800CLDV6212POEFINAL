@@ -34,7 +34,7 @@ namespace ONELLOTARJANNEST10178800CLDV6212POEFINAL.Services
             await _userProfilesTableClient.AddEntityAsync(profile);
 
             
-            await _customerTblService.AddCustomerAsync(new CustomerTbl
+            await _customerTblService.AddCustomerAsync(new UserProfile
             {
                 FirstName = profile.FirstName,
                 LastName = profile.LastName,
@@ -49,7 +49,7 @@ namespace ONELLOTARJANNEST10178800CLDV6212POEFINAL.Services
             await _productsTableClient.AddEntityAsync(product);
 
          
-            await _productsTblService.AddProductAsync(new ProductsTbl
+            await _productsTblService.AddProductAsync(new Product
             {
                 ProductID = product.ProductID,
                 ProductName = product.ProductName,

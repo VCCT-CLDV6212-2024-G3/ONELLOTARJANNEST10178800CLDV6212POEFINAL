@@ -14,7 +14,7 @@ namespace ONELLOTARJANNEST10178800CLDV6212POEFINAL.Services
             _connectionString = configuration.GetConnectionString("SqlServerConnection");
         }
 
-        public async Task AddProductAsync(ProductsTbl product)
+        public async Task AddProductAsync(Product product)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
